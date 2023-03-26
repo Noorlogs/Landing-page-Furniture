@@ -1,0 +1,160 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --background: #060606;
+}
+
+/* Navbar basic css */
+
+header{
+    background: var(--background);
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px, 10%;
+
+}
+body{
+    background: var(--background);
+    
+}
+.right-div{
+    width: 70%;
+    height: 500px;
+    border-radius: 10px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 40px;
+    background-size: cover;
+
+    /* z-index: -1; */
+}
+
+.left-div{
+    position:absolute;
+    padding: 20px;
+    text-align: right;
+    width: 40%;
+    float: left;
+    background-color: #060606ad ;
+    margin-left: 50px;
+    margin-top: 10%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.left-div h1{
+    margin-bottom: 30px;
+    color: #f8f9f9;
+    /* font-family: 'Caveat', cursive; */
+    font-family: 'Merriweather', serif;
+    /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Satisfy', cursive; */
+
+
+}
+.left-div p{
+    margin-top: 30px;
+    color: #f8f9f9;
+    font-family: 'Satisfy', cursive;
+}
+
+/* navbar */
+ul{
+    display: inline;
+    text-align: left;
+}
+
+ul li{
+    display: inline-block;
+    margin-right: -5px;
+  	position: relative;
+  	padding: 15px 20px;
+    cursor: pointer;
+}
+
+ul li, a {
+    
+    color: #f8f9f9;
+    font-size: 20px;
+    text-transform: capitalize
+}
+
+.logo{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 30px;
+    z-index: 1;
+}
+
+.nav_item li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_item a:hover{
+    color:  rgb(255, 193, 111);
+    font-size: 25px;
+}
+
+
+/* submenu */
+
+li ul{
+    display: none;
+    background-color: #f8f9f9;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -20px;
+    width: fit-content;
+    /* padding:0px 0px 0px 0px; */
+    
+}
+
+.submenu li a{
+    color: #060606;
+    font-size: 15px;
+
+}
+
+li ul a li{
+    
+    width:fit-content;
+    border-bottom: 1px solid #f8f9f9;
+}
+
+li:hover ul{
+    display: inline;
+}
+li ul a li:hover{
+    width:fit-content;
+    transition: all 0.3s ease 0s;
+
+}
+.fa{
+    margin: 10px;
+    float: right;
+}
+
+.fa:hover {
+    font-size: 25px;
+    transition: all 0.3s ease 0s;
+
+}
+
+/* ad  */
+.ad{
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+
+/* media queries */
+
+/* for mobile  */
